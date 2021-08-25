@@ -1,0 +1,6 @@
+[
+  { "titulo": "Lavarse los dientes", "estado": "terminada" },
+  { "titulo": "Pasear al perro", "estado": "terminada" },
+  { "titulo": "Dar clase", "estado": "en progreso" },
+  { "titulo": "Cocinar", "estado": "pendiente" }
+]
