@@ -1,0 +1,7 @@
+[
+  { "titulo": "Leer un libro", "estado": "pendiente" },
+  { "titulo": "Crear un programa", "estado": "en progreso" },
+  { "titulo": "Ir al supermercado", "estado": "pendiente" },
+  { "titulo": "Ver serie Netflix", "estado": "pendiente" },
+  { "titulo": "Leer un cuento", "estado": "pendiente" }
+]

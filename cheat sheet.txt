@@ -1,0 +1,12 @@
+JSON
+
+Convertir texto en JSON a Javascript:
+
+JSON.parse(variable)
+
+Convertir texto en Javascript a JSON:
+
+JSON.stringify(variable)
+
+
+
