@@ -34,5 +34,37 @@ let elCuadruple = numeros.map(function(numeros){
 
 console.log(elCuadruple);
 
+let arg1 = process.argv[2];
 
+let numerosMenoresADet = numeros.filter(function(numeros){
+    return numeros < arg1;
+});
+
+let numerosMayoresADet = numeros.filter(function(numeros){
+    return numeros >= arg1;
+});
+
+console.log(numerosMenoresADet);
+console.log(numerosMayoresADet);
+
+function sumar (a,b){
+    return a + b;
+}
+function restar (a,b){
+    return a - b;
+}
+function multiplicar (a,b){
+    return a * b;
+}
+function dividir (a,b){
+    return a / b;
+}
+
+function calculadora (a, b, callback){
+    return callback(a, b);
+}
+console.log(calculadora(4,3,sumar));
+console.log(calculadora(4,3,restar));
+console.log(calculadora(4,3,dividir));
+console.log(calculadora(4,3,multiplicar));
 
