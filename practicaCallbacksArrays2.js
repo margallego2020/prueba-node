@@ -1,5 +1,5 @@
 
-let arrayVacio=[];
+/*let arrayVacio=[];
 arrayVacio == 0 ? console.log("True") : console.log ("False");
 arrayVacio == [] ? console.log("True") : console.log ("False");
 
@@ -47,6 +47,17 @@ let numerosMayoresADet = numeros.filter(function(numeros){
 console.log(numerosMenoresADet);
 console.log(numerosMayoresADet);
 
+
+let fechaDeHoy = new Date;
+console.log(fechaDeHoy);
+console.log(fechaDeHoy.getDate());
+console.log(fechaDeHoy.getMonth()+1);
+console.log(fechaDeHoy.getFullYear());
+
+*/
+
+
+
 function sumar (a,b){
     return a + b;
 }
@@ -60,11 +71,71 @@ function dividir (a,b){
     return a / b;
 }
 
+
+
 function calculadora (a, b, callback){
-    return callback(a, b);
+    return callback (a, b);
 }
-console.log(calculadora(4,3,sumar));
-console.log(calculadora(4,3,restar));
-console.log(calculadora(4,3,dividir));
-console.log(calculadora(4,3,multiplicar));
+
+
+let numeroA = process.argv[3];
+let numeroB = process.argv[4];
+let operar = process.argv[2];
+
+console.log(operar + ' ' + typeof(operar));
+//console.log(numeroA + ' ' + typeof(numeroA));
+//console.log(numeroB +  ' ' + typeof(numeroB));
+
+
+/*
+switch (operar) {
+    case "sumar":
+        {
+            console.log(calculadora(numeroA,numeroB,sumar));
+            break;
+        }
+    case "restar":
+        {
+            console.log(calculadora(numeroA,numeroB,restar));
+            break;
+        }
+    case "multiplicar":
+        {
+            console.log(calculadora(numeroA,numeroB,multiplicar));
+            break;
+        }
+    case "dividir":
+        {
+            console.log(calculadora(numeroA,numeroB,dividir));
+            break;
+        }
+}*/
+
+console.log(typeof(numeroA));
+console.log(typeof(numeroB));
+
+
+switch (typeof(numeroA)) {
+    case null:
+        {
+            return 0;
+            break;
+        }
+    case 'string':
+        {
+            if (typeof(numeroA) != NaN){
+                return Number(numeroA);
+            } 
+            else {
+                return "Mensaje de error";
+            }
+            break;
+        }
+
+    default: {
+        return "Mensaje de error resto";
+        break;
+    }
+
+}
 
