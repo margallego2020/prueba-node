@@ -36,10 +36,10 @@ Páginas de modelos:
         Opcionales
  
  - Model Y:
-       * Fotos
-       * Diseño
-       * Especificaciones
-       * Opcionales
+       - Fotos
+       - Diseño
+       - Especificaciones
+       - Opcionales
 
 Accesorios
  - Cargador de hogar / transformador
