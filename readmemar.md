@@ -1,4 +1,4 @@
-**Público Objetivo**: Está orientado a hombres y mujeres comprendidos entre los 27 y 60 años siendo el cuidado y protección del medio ambiente su principal preocupación. Segmento ABC 1, urbano, early adopters, estudios universitarios/postgrado, propietarios de su vivienda.
+**Público Objetivo:** Está orientado a hombres y mujeres comprendidos entre los 27 y 60 años siendo el cuidado y protección del medio ambiente su principal preocupación. Segmento ABC 1, urbano, early adopters, estudios universitarios/postgrado, propietarios de su vivienda.
  
 Será un sitio para la promoción de una marca de autos eléctricos, la visualización de los modelos, sus características técnicas y opciones estéticas. También se podrán adquirir accesorios.
 
@@ -60,12 +60,15 @@ Red de concesionarios y servicios
  - Google maps
 
 
+
 **Integrantes del equipo:**
  
 - Alan Alfredo Bareiro : Técnico Electromecánico. Estudiante de tecnicatura en Programación.
 - Juan Ignacio Quinteros: Lic. en Administración de Empresas.
 - Francisco Rivero: Lic. en Periodismo y Cs. de la Comunicación.
 - Martin Gallego: Contador Público.
+ 
+
  
 **Sitios de referencia:**
  
