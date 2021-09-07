@@ -15,31 +15,28 @@ Página de inicio:
 
 Páginas de modelos:
  - Model S:
-
-        Fotos
-        Diseño
-        Especificaciones
-        Opcionales
+   - Fotos
+   - Diseño
+   - Especificaciones
+   - Opcionales
  
  - Model 3:
-
-        Fotos
-        Diseño
-        Especificaciones
-        Opcionales
- 
+   - Fotos
+   - Diseño
+   - Especificaciones
+   - Opcionales
+   
  - Model X:
- 
-        Fotos
-        Diseño
-        Especificaciones
-        Opcionales
+   - Fotos
+   - Diseño
+   - Especificaciones
+   - Opcionales
  
  - Model Y:
-       - Fotos
-       - Diseño
-       - Especificaciones
-       - Opcionales
+   - Fotos
+   - Diseño
+   - Especificaciones
+   - Opcionales
 
 Accesorios
  - Cargador de hogar / transformador
