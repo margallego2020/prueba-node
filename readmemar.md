@@ -14,29 +14,29 @@ Página de inicio:
  - Redes Sociales.
 
 Páginas de modelos:
- - Model S:
+ * Model S:
    - Fotos
    - Diseño
    - Especificaciones
    - Opcionales
  
- - Model 3:
+ * Model 3:
    - Fotos
    - Diseño
    - Especificaciones
    - Opcionales
    
- - Model X:
+ * Model X:
    - Fotos
    - Diseño
    - Especificaciones
    - Opcionales
  
- - Model Y:
-   * Fotos
-   * Diseño
-   * Especificaciones
-   * Opcionales
+ * Model Y:
+   - Fotos
+   - Diseño
+   - Especificaciones
+   - Opcionales
 
 Accesorios
  - Cargador de hogar / transformador
