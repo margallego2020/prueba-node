@@ -14,25 +14,25 @@ Página de inicio:
  - Redes Sociales.
 
 Páginas de modelos:
- * Model S:
+ - Model S:
    - Fotos
    - Diseño
    - Especificaciones
    - Opcionales
  
- * Model 3:
+ - Model 3:
    - Fotos
    - Diseño
    - Especificaciones
    - Opcionales
    
- * Model X:
+ - Model X:
    - Fotos
    - Diseño
    - Especificaciones
    - Opcionales
  
- * Model Y:
+ - Model Y:
    - Fotos
    - Diseño
    - Especificaciones
@@ -60,7 +60,6 @@ Red de concesionarios y servicios
  - Google maps
 
 
-
 **Integrantes del equipo:**
  
 - Alan Alfredo Bareiro : Técnico Electromecánico. Estudiante de tecnicatura en Programación.
@@ -69,7 +68,6 @@ Red de concesionarios y servicios
 - Martin Gallego: Contador Público.
  
 
- 
 **Sitios de referencia:**
  
 https://www.tesla.com/ : su diseño innovador en la forma de presentar los productos en forma horizontal y desplazamiento visual nos resultó atractivo.
