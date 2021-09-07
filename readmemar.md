@@ -1,4 +1,4 @@
-Público Objetivo: Está orientado a hombres y mujeres comprendidos entre los 27 y 60 años siendo el cuidado y protección del medio ambiente su principal preocupación. Segmento ABC 1, urbano, early adopters, estudios universitarios/postgrado, propietarios de su vivienda.
+**Público Objetivo**: Está orientado a hombres y mujeres comprendidos entre los 27 y 60 años siendo el cuidado y protección del medio ambiente su principal preocupación. Segmento ABC 1, urbano, early adopters, estudios universitarios/postgrado, propietarios de su vivienda.
  
 Será un sitio para la promoción de una marca de autos eléctricos, la visualización de los modelos, sus características técnicas y opciones estéticas. También se podrán adquirir accesorios.
 
@@ -33,10 +33,10 @@ Páginas de modelos:
    - Opcionales
  
  - Model Y:
-   - Fotos
-   - Diseño
-   - Especificaciones
-   - Opcionales
+   * Fotos
+   * Diseño
+   * Especificaciones
+   * Opcionales
 
 Accesorios
  - Cargador de hogar / transformador
@@ -60,14 +60,14 @@ Red de concesionarios y servicios
  - Google maps
 
 
-Integrantes del equipo:
+**Integrantes del equipo:**
  
 - Alan Alfredo Bareiro : Técnico Electromecánico. Estudiante de tecnicatura en Programación.
 - Juan Ignacio Quinteros: Lic. en Administración de Empresas.
 - Francisco Rivero: Lic. en Periodismo y Cs. de la Comunicación.
 - Martin Gallego: Contador Público.
  
-Sitios de referencia:
+**Sitios de referencia:**
  
 https://www.tesla.com/ : su diseño innovador en la forma de presentar los productos en forma horizontal y desplazamiento visual nos resultó atractivo.
 
@@ -79,4 +79,4 @@ https://www.bmwusa.com/: la sofisticación en la interfaz gráfica en los menús
 
 https://www.americanexpress.com/: se destaca la sencillez de su interfaz gráfica en el login del usuario.
 
-https://www.gcdconline.com.ar/ : diseño agradable y sencillo además de no sobrecargar de información y detalles específicos del producto a primera vista, buena forma de filtrado muy intuitiva .
+https://www.gcdconline.com.ar/: diseño agradable y sencillo además de no sobrecargar de información y detalles específicos del producto a primera vista, buena forma de filtrado muy intuitiva.
