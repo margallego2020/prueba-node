@@ -1,8 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     
     font-family: 'Lato', sans-serif;
 }
 
+.contenedor01,
+.contenedor02 {
+    padding: 20px;
+}
+
+.contenedor01 {
+    width: 90%;
+    
+    background-color: salmon;
+
+}
+
+.contenedor02 {
+    width: 50%;
+    
+    background-color: rgb(157, 250, 114);
+
+}
+
+@media (min-width: 576px) {
+    .contenedor01,
+    .contenedor02 {
+        width: 70%;
+        margin: auto;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor01 {
+        background-color: black;
+        color: white;
+    }
+    .contenedor02 {
+        background-color: rgb(116, 243, 12);
+        color: red; 
+       
+    }
+}
+
+@media (min-width: 992px) {
+    .contenedor01,
+    .contenedor02 {
+        border: solid 10px yellow ;
+       
+    }
+}
+@media (min-width: 1200px) {
+    .contenedor01,
+    .contenedor02 {
+        max-width: 1100px;
+       
+    }
+}
+
+
+
+
+
+
+
+/*
+.contenedor01 {
+    width: 90%;
+    background-color: pink;
+}
+
+.contenedor02 {
+    width: 50%;
+    background-color: pink;
+}
+
+
+@media (min-width: 576px) {
+    body {
+       background-color: yellow;
+       
+    }
+    
+    .contenedor01 {
+        width: 70%;
+        text-align:center;
+    }
+    
+    .contenedor02 {
+        width: 70%;
+        text-align:center;
+    }   
+ 
+}
+
+@media (min-width: 768px) {
+    body {
+        background-color: white;
+    }
+    .contenedor01 {
+       
+        background-color: red;
+    }
+    
+    .contenedor02 {
+       
+        background-color: lightskyblue;
+    }
+ 
+}
+
+
+@media (min-width: 992px) {
+    .contenedor01 {
+        border: 10px solid salmon;
+    }
+    
+    .contenedor02 {
+        border: 10px solid salmon;
+    }
+
+@media (min-width: 1200px) {
+      .contenedor01 {
+            max-width: 110px;
+        }
+        
+        .contenedor02 {
+            max-width: 110px;
+        }
+         
+
+}
+
+
+
+
+.oculto {
+    display: none;
+}
+
+.contenedor01 {
+    width: 70%;
+    max-width: 900px;
+    padding: 20px;
+    border: solid 5px black;    
+    background-color: salmon;
+    margin:auto;
+}
+
+@media (min-width: 570px) {
+    .contenedor01 {
+        width: 90%;
+        border: solid 5px salmon;    
+        background-color: #000;
+        color:#fff;
+       
+    }
+   
+}
+
+@media (min-width: 900px) {
+    .contenedor01 {
+        color:#ff0000;
+       
+    }
+
+    .oculto {
+        display: block;
+    }
+
+}*/
+
+/*
+breakpoints:
+576
+768
+992
+1200
+
+
+.contenedor03 {
+    width: 80%;
+    padding: 15px;
+    border: 5px ;
+}
+
+
+*/
+
+/*
 h1 {
     
     font-size: 50px;
@@ -43,4 +233,5 @@ strong {
     color: red;
     text-transform: uppercase;
 
-}
+} 
+*/
