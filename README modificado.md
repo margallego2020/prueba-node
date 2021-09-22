@@ -1,4 +1,4 @@
-##Público Objetivo:
+## Público Objetivo: 
 
 Está orientado a hombres y mujeres comprendidos entre los 27 y 60 años siendo el cuidado y protección del medio ambiente su principal preocupación. Segmento ABC 1, urbano, early adopters, estudios universitarios/postgrado, propietarios de su vivienda.
  
@@ -15,7 +15,7 @@ Página de inicio:
  - Red de concesionarios.
  - Redes Sociales.
 
-Páginas de modelos de autos S, 3, X e Y:
+Páginas de modelos de autos:
  - Fotos
  - Diseño
  - Especificaciones
@@ -43,7 +43,7 @@ Red de concesionarios y servicios
  - Google maps
 
 
-##Integrantes del equipo:
+## Integrantes del equipo:
  
 - Alan Alfredo Bareiro : Técnico Electromecánico. Estudiante de tecnicatura en Programación.
 - Juan Ignacio Quinteros: Lic. en Administración de Empresas.
@@ -51,7 +51,7 @@ Red de concesionarios y servicios
 - Martin Gallego: Contador Público.
  
 
-##Sitios de referencia:
+## Sitios de referencia:
  
 https://www.tesla.com/ : su diseño innovador en la forma de presentar los productos en forma horizontal y desplazamiento visual nos resultó atractivo.
 
