@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pruebas</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles-registration.css">
+    
+</head>
+
+<body>
+
+    <header>
+
+
+
+    </header>
+
+    <main>
+        
+      <!-- FORMULARIO DE REGISTRACION -->
+
+      <!-- Titulo del registro-->
+
+      <form action="/registration.html" method="POST">
+        <div class="title"> Ingresá tus datos para crear tu cuenta</div>
+      
+      <!-- Campos a completar del nombre usuario, nombre, apellido-->
+
+        <div class="field">
+          <label for="user-login-name">Nombre de usuario:</label>
+          <input type="text" name="user-login-name" id="user-login-name" required class="input">
+        </div>
+      
+
+        <div class="field">
+          <label for="user-name">Nombre:</label>
+          <input type="text" name="user-name" id="user-name" required class="input">
+        </div>
+       
+
+        <div class="field">
+          <label for="user-surname">Apellido:</label>
+          <input type="text" name="user-surname" id="user-surname" required class="input">
+        </div>
+
+
+      <!-- Campos a completar del sexo, fecha nacimiento, e-mail-->
+
+       <div class="field">
+          <label for="user-sex">Sexo:</label>
+          <select name="user-sex" required class="input" >
+            <option disabled hidden selected>Seleccionar sexo</option>
+            <option value="F">(F)emenino</option>
+            <option value="M">(M)asculino</option>
+            <option value="X">(N)o Binario</option>
+          </select>
+        </div> 
+        
+        
+       <div class="field">
+          <label for="user-birth-date">Fecha de nacimiento </label>
+          <input type="date" name="user-birth-date" id="user-birth-date" required class="input">     
+        </div>
+
+        <div class="field">
+          <label for="user-email">Correo electrónico:</label>
+          <input type="email" name="user-email" id="user-email" required class="input" >
+        </div>
+
+
+         <!-- Campos a completar de contraseña y repetir contraseña-->
+
+        <div class="field">
+          <label for="user-password">Contraseña:</label>
+          <input type="password" name="user-password" id="user-password" required class="input">
+        </div>
+
+        <div class="field">
+          <label for="user-repeat-password">Repetir contraseña:</label>
+          <input type="password" name="user-repeat-password" id="user-repeat-password" required class="input">
+        </div>
+        
+         <!-- Campos aceptar términos de privacidad y solicitar novedades de productos -->
+       
+         <div class="field">
+            <label>
+              <input type="checkbox" name="terminos" value="terminos">
+              Leí y acepto los términos y condiciones y la política de privacidad.
+            </label>
+        </div>
+
+        
+         <div class="field">
+            <label>
+              <input type="checkbox" name="novedades" value="novedades">
+              Me gustaría recibir novedades sobre los productos.
+            </label>
+        </div>
+
+        <!-- Botones para ingresar, cancelar-->
+      
+        <button type="submit" class="registration-button">Ingresar</button>
+      
+        <button type="reset" class="registration-button">Cancelar</button>
+
+        <!-- Menú iniciar sesión si estoy registrado -->
+
+        <div class="field">¿Ya estás registrado?</div>
+        <button type="submit" class="registration-button">Iniciar sesión</button>
+
+
+      </form>
+
+       
+  </main>
+  
+  <footer>
+
+    <!-- FORMULARIO DE CONSULTAS -->
+    
+    <!-- Campos de consulta (nombre, e-mail y consulta)  -->
+
+    <div class="field">
+      <label for="user-name">Nombre:</label>
+      <input type="text" name="user-name" id="user-name" required class="input">
+    </div>
+
+    <div class="field">
+      <label for="user-surname">Apellido:</label>
+      <input type="text" name="user-surname" id="user-surname" required class="input">
+    </div>
+
+
+    <div class="field">
+      <label for="user-email">Correo electrónico:</label>
+      <input type="email" name="user-email" id="user-email" required class="input" >
+    </div>
+
+    <div class="field">
+      <label for="comments">Deje sus comentarios:</label>
+      <textarea name="comments" id="comments" class="input"></textarea>
+    </div>
+
+    <button type="submit" class="registration-button">Enviar</button>
+    
+  </footer>
+
+
+
+</html>

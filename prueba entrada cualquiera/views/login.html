@@ -1,39 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Pruebas</title> 
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles-login.css">
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/css/styles-login.css" rel="stylesheet">
+
+    <!--fuente principal-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <!--fontawesom-->
+    <script src="https://kit.fontawesome.com/449719d5ec.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+
 </head>
 
 <body>
 
     <header>
 
+        <div class="logo-nav">
 
+           
 
+            <img class="logo" src="/images/logo-afmj01.png" alt="logo-afmj">
+
+            <nav class="nav-bar">
+
+                <ul class="main-nav-bar">
+                    <li class="user"><a href=""> Usuario </a> </li>
+                    <li class="buys"><a href=""> Compras </a></li>
+                    <li class="news"><a href=""> Novedades </a></li>
+                </ul>
+                
+
+            </nav>
+
+            <div class="hamburguer-bar">
+                <i class="fas fa-caret-square-down"></i>
+            </div>
+
+        </div>
+
+        <div class="search-bar">
+
+            <form action="busqueda.html" method="post" class="searching"> 
+             
+                <input class="search" type="text" name="Search" placeholder="Busqueda" required> 
+                <input type="submit" value="Ir"> 
+            
+            </form> 
+
+        </div> 
+    
     </header>
+
+    <div class="banner">
+
+     <img  src="/images/banner-afmj01.png" alt="banner">
+
+    </div>
+
+   
 
     <main>
         
       <!-- FORMULARIO DE LOGIN -->
 
-      <!-- Titulo del login-->
+      <!-- TITULO DEL LOGIN-->
 
-      <form action="/login.html" method="POST">
+      <form action="/login.html" method="POST" class="create-formularie">
 
-        <div class="title"> Ingresá tus datos para el login de tu cuenta</div>
+        <h3 class="login-title"> Login de mi cuenta</h3>
       
-      <!--  Campos a completar del nombre usuario, password  -->
+      <!--  CAMPOS A COMPLETAR DEL NOMBRE USUARIO, PASSWORD  -->
 
         <div class="field">
           <label for="user-name">Nombre de usuario:</label>
-          <input type="text" name="user-name" id="user-name" required class="input">
+          <input type="text" name="user-name" id="user-name" minlength="1" required class="input">
         </div>
       
         <div class="field">
@@ -41,13 +91,14 @@
           <input type="password" name="user-password" id="user-password" required class="input">
         </div>
 
-        <!-- Botones para ingresar, cancelar-->
+        <!-- BOTONES PARA INGRESAR Y CANCELAR -->
       
         <button type="submit" class="login-button">Ingresar</button>
       
         <button type="reset" class="login-button">Cancelar</button>
       
-        <!-- Campos para recordar usuario y botones de olvido y link a generar usuario y/o contraseña --> 
+        <!-- CAMPOS PARA RECORDAR USUARIO Y PASSWORD Y BOTONES DE OLVIDO 
+        Y LINK A GENERAR USUARIO Y/O CONTRASEÑA--> 
       
         <div class="field">
           <label for="user-remember-password">Recordar mi usuario</label>
@@ -59,42 +110,31 @@
 
         <button type="submit" class="login-button">Crear nueva contraseña o usuario</button>
 
-      </form>
+      </form> 
+ 
 
-       
-  </main>
-  
-  <footer>
+    </main>
 
-    <!-- FORMULARIO DE CONSULTAS -->
+
+    <footer>
+
+
+        <div class="texto-footer">
+            <i class="item-1 fab fa-pagelines"></i> <p class="info-footer">Lorem ipsum dolor sit amet, elit. Minus, quibusdam culpa quae ad ab numquam?</p>
+        </div>
+            
+        <div class="texto-footer">
+            <i class=" item-2 fas fa-solar-panel"></i><p class="info-footer">Lorem ipsum dolor sit amet, elit. Minus, quibusdam culpa quae ad ab numquam?</p>
+        </div>
+        <div class="texto-footer">
+            <i class="item-3 fas fa-battery-full"></i><p class="info-footer">Lorem ipsum dolor sit amet, elit. Minus, quibusdam culpa quae ad ab numquam?</p>
+        </div>
+
+        <p class="copy">Copyright 2021..</p>
+
+
+    </footer>
     
-    <!-- Campos de consulta (nombre, e-mail y consulta)  -->
-
-    <div class="field">
-      <label for="user-name">Nombre:</label>
-      <input type="text" name="user-name" id="user-name" required class="input">
-    </div>
-
-    <div class="field">
-      <label for="user-surname">Apellido:</label>
-      <input type="text" name="user-surname" id="user-surname" required class="input">
-    </div>
-
-
-    <div class="field">
-      <label for="user-email">Correo electrónico:</label>
-      <input type="email" name="user-email" id="user-email" required class="input" >
-    </div>
-
-    <div class="field">
-      <label for="comments">Deje sus comentarios:</label>
-      <textarea name="comments" id="comments" class="input"></textarea>
-    </div>
-
-    <button type="submit" class="registration-button">Enviar</button>
-    
-  </footer>
-
-
+</body>
 
 </html>

@@ -1,0 +1,229 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+
+}
+
+body {
+    font-size: 12px;
+    background-color: #ebebeb; 
+}
+
+header {
+    background-color: #EAC926;
+    padding-bottom: 20px;
+}
+
+header .navbar-menu{
+    display: none;           
+}
+
+
+header .header-logo {
+    padding: 15px;
+}
+
+
+
+header .header-logo, header .busqueda {
+    width: 50%;
+}
+
+
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+div.main-header {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+main section article {
+    margin: 10px 0px;
+    background-color: #fff;
+}
+
+div.ultima-visita, div.ofertas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article div.datos-article {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: baseline;
+    position: relative;
+}
+
+
+main section article img {
+    width: 100%;
+    
+}
+
+.compra-cuotas {
+    text-align: center;
+}
+.compras-logo {
+    font-size: 12px;
+}
+
+.burger-menu {
+    font-size: 35px;
+    border-radius: 6px;
+    color:#ebebeb;
+    background-color: #1259c3;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    padding: 10px 15px;    
+    
+}
+
+
+
+.banner {
+    width: 100%;
+}
+
+.titulo-section {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+.descripcion {
+    font-size: 16px;
+    display: none;
+   
+}
+
+
+ main article div i { 
+     color: #39b54a;
+     display: block;
+     font-size: 16px;
+     padding: 5px;
+     width: 30px;
+     height: 30px;
+     border: 1px solid #39b54a;
+     background-color: #FFF;
+     border-radius: 50%;
+     position: absolute;
+     right: 20px;
+     top: -15px;
+}
+
+ 
+
+ul {
+    list-style-type: none;  
+    /* display: none;   */
+}
+
+
+
+.menu-footer {
+    text-align: center;
+    margin: auto;
+}
+
+.icono-footer {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+
+/* /* Configuración pantalla tablets (ancho mínimo 361 px)  */
+
+@media (min-width: 361px){
+
+    header .navbar-menu{
+        display:block;
+        display: flex; 
+        justify-content: space-between;
+    }
+
+    .left-navbar, .right-navbar {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 5px;
+    }
+
+    ul li {
+        /* border: 2px red solid; */
+        padding: 0px 5px;
+        
+
+    }
+    main section article .descripcion{ 
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.articulos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+
+    }
+
+    main section div.articulos article {
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+    
+    ul {
+        display: block;
+    }
+
+    
+}
+
+/* /* Configuración pantalla desktop (ancho mínimo 769 px)  */
+
+@media (min-width: 769px){
+    
+    main section div.articulos article {
+        width: 22.5%;
+    }
+
+     }  
+    
+    

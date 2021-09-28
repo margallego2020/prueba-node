@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/* CONFIGURACION DEL BODY, TITULOS Y TEMAS */
+
+body{
+    font-family: 'Quicksand', sans-serif;
+   
+}
+
+h2{
+    color: #f9f8f8;
+    padding: 15px;
+    font-weight: 300;
+    text-align: left;
+    font-size: 28px;
+
+}
+
+h4{
+    color: #f9f8f8;
+    padding: 5px;
+}
+
+
+/* CONFIGURACION DEL HEADER (NAVEGADOR, BARRA DE BUSQUEDA Y BANNER */
+
+header{
+    background-color: #f9f8f8;
+   
+}
+
+
+a,li{
+    list-style: none;
+    text-decoration: none;
+    color: #031926;
+}
+
+.main-nav-bar {
+    display: flex;
+    padding: 5px;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav-bar{
+    align-self: flex-end;
+    width: 45%;
+    display: none;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.search-bar{
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+}
+.searching{
+    display: flex;
+    width: 100%;
+    
+}
+
+.search{
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+}
+.user,.buys,.news{
+    padding: 2px;
+    margin-right: 3px;
+}
+
+.logo-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 50%;
+}
+
+.banner{
+    margin: 0;
+}
+
+.banner img{
+   width: 100%;
+
+}
+
+/* CONFIGURACION ICONO DE MENU */
+
+.hamburguer-bar{
+    
+  align-self: center;
+  color: #031926;
+  max-width: 50px;
+  border-radius:25%;
+  text-align: center;
+  font-size: 45px;
+  padding: 3px;
+  margin-right: 15px;
+  
+}
+
+/* CONFIGURACION DEL MAIN */
+
+main{
+    background-color:#031926 ;
+    margin-top: -8px;
+}
+
+.create-formularie {
+  padding: 20px 15px;
+  width: 100%;
+  
+}
+
+.login-title {
+  color: #f9f8f8;
+  font-weight: 300;
+  text-align: left;
+  font-size: 24px;
+  padding-bottom: 20px; 
+  text-align: center;
+  
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+
+.field label {
+  margin: 10px 0px;
+  color: #f9f8f8;
+  /* display: block; */
+}
+
+
+.input {
+  width: 100%;
+  padding: 8px;
+}
+
+
+.login-button {
+  background-color: #39b54a;
+    border: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0px;
+    color: #721817;
+    background-color: #f9f8f8;
+}
+
+/* CUANDO HAGO HOVER SOBRE LOS BOTONES DE INGRESAR, CANCELAR, OLVIDO DE CONTRASEÑA Y USUARIO, 
+Y CREAR NUEVA CONTRASEÑA CAMBIAN DE FORMATO */
+  
+
+
+.login-button:hover  {
+  color: #f9f8f8;
+  background-color: #721817;
+}
+
+
+
+/* CONFIGURACION DE LOS ELEMENTOS DEL FOOTER */
+
+footer{
+    background-color: #f9f8f8;
+    display:flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.info-footer{
+    text-align: center;
+    padding: 10px;
+}
+
+.item-1{
+    padding: 3px;
+    margin-top: 10px;
+    color: green;
+    align-self: center;
+    font-size: 40px;
+}
+.item-2{    
+    padding: 3px;
+    margin-top: 10px;
+    color: #721817;
+    align-self: center;
+    font-size: 40px;
+
+}
+.item-3{    
+    padding: 3px;
+    margin-top: 10px;
+    color: #031926;
+    align-self: center;
+    font-size: 40px;
+
+}
+
+.texto-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.copy{
+    padding: 5px;
+    margin-top: 10px;
+}
+
+
+
+/* CONFIGURACION DE MEDIA QUERIES PARA FORMATO LAPTOP EN ADELANTE */
+
+
+@media (min-width: 768px){
+
+    .nav-bar{
+        display: block;
+    }
+
+    .hamburguer-bar{
+        display: none;
+    }
+
+    .logo{
+        width: 40%;
+    }
+
+}
+

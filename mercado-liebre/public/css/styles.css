@@ -1,0 +1,414 @@
+/* CONFIGURACION DE TODO EL DOCUMENTO */
+
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+
+}
+
+/* CONFIGURACION  DEL BODY */
+
+body {
+    font-size: 12px;
+    background-color: #ebebeb; 
+}
+
+/* CONFIGURACIONES DEL HEADER */
+
+main section article {
+    margin: 10px 0px;
+    background-color: #fff;
+}
+
+header {
+    background-color: #EAC926;
+    padding-bottom: 20px;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.main-header {
+    display:flex;
+    align-items:center;
+}
+
+
+header div.main-header {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header .navbar-menu {
+    display: none;           
+}
+
+header .header-logo, header .form {
+    width: 40%;
+}
+
+header .header-logo{
+    padding: 10px;
+}
+
+
+header .compra-cuotas {
+    width: 30%;
+    
+}
+
+.compra-cuotas {
+    text-align: center;
+    font-weight: normal;
+}
+.compras-logo {
+    font-size: 12px;
+}
+
+
+/* CONFIGURACION DE LA BARRA DE BUSQUEDA (A MEJORAR) */
+
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+
+
+/* CONFIGURACION DEL MAIN PARA QUE QUEDE ADAPTADO SEGUN CAMBIO EL FORMATO DE PANTALLA */
+
+div.ultima-visita, div.ofertas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article div.datos-article {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: baseline;
+    position: relative;
+}
+
+
+/* CONFIGURACION DE CADA IMAGEN DE CADA ARTICULO */
+
+
+main section article img {
+    width: 100%;
+    
+}
+
+
+/* CONFIGURACION HAMBURGUESA DEL MENU */
+
+.burger-menu {
+    font-size: 35px;
+    border-radius: 6px;
+    color:#ebebeb;
+    background-color: #1259c3;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    padding: 10px 15px;    
+    
+}
+
+/* LE SACO LOS PUNTOS A LOS ITEMS DEL NAV-BAR */
+
+ul {
+    list-style-type: none; 
+    font-weight: normal; 
+     
+}
+
+.banner {
+    width: 100%;
+}
+
+.titulo-section {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.precio {
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+.descripcion {
+    font-size: 16px;
+    display: none;
+   
+}
+
+/* FORMATO Y HOVER DEL CAMION CON SU EFECTO DE ROTACION EN CADA ARTICULO */
+
+ main article div i { 
+     color: #39b54a;
+     display: block;
+     font-size: 16px;
+     padding: 5px;
+     width: 30px;
+     height: 30px;
+     border: 1px solid #39b54a;
+     background-color: #FFF;
+     border-radius: 50%;
+     position: absolute;
+     right: 20px;
+     top: -15px;
+}
+
+.fa-truck {
+    transform: rotate(0deg);
+    transition: transform 450ms;
+ } 
+
+.fa-truck:hover {
+   
+    transform: rotate(-90deg);
+} 
+
+
+ 
+
+/* CONFIGURACION DE LOS ITEMS DEL FOOTER Y HOVER DEL ICONO DEL FOOTER */
+
+.menu-footer {
+    text-align: center;
+    margin: auto;
+}
+
+.icono-footer {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+.icono-footer:hover {
+    color: #69b8dd;
+}
+
+.submenu-footer {
+    margin: 22px 0px;   
+}
+
+
+/* CONFIGURACION DE LOS FORMULARIOS DE LOGIN Y REGISTER */
+
+/* TITULO DEL LOGIN */
+
+.title-form {
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+
+/* TITULOS DEL FORMULARIO */
+
+.formulario {
+    background-color: #ebebeb;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+/* CAMPOS DEL FORMULARIO */
+
+
+.formulario input {
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 4px; 
+    max-width: 100%;
+    
+}
+
+.formulario h4 {
+    font-size: 16px;
+    margin: 10px 0px;
+    
+}
+
+/* CONFIGURACION BOTONES LOGIN Y REGISTER */
+
+.button-register {
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.button-register-login {
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
+    background-color: #1259c3;
+    color: #fff;
+    padding: 10px;
+   
+}
+
+/* CUANDO PASO POR EL BOTON DE LOGIN CAMBIA DE COLOR */
+
+.button-register-login:hover {
+    background-color: #0022AA; 
+}
+
+
+
+
+    
+
+
+
+/* CONFIGURACION PANTALLA TABLETS (ANCHO MINIMO 361 PX)  */
+
+@media (min-width: 361px){
+
+/* SE APLICA EN LOS MENUS DE NAVEGACION */
+
+    header .navbar-menu{
+        display:block;
+        display: flex; 
+        justify-content: space-between;
+        
+    }
+
+    .left-navbar, .right-navbar {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 5px;
+    }
+
+    ul li { 
+        padding: 0px 5px;
+    
+    }
+
+    /* APARECEN LOS CONTENIDOS DEL MENU DE NAVEGACION Y LA DESCRIPCION DEL ARTICULO */
+
+    ul {
+        display: block;
+    }
+
+    
+    main section article .descripcion{ 
+        display: block;
+    }
+
+
+
+    /* CUANDO SE PASA POR UN ARTICULO SE PONE LA SOMBRA SOBRE EL */
+
+   
+    main section article {
+
+       
+
+        box-shadow: 0px 0px 0px rgb(100, 100, 100);
+
+        transition: box-shadow 450ms;
+    }
+    
+    /* EFECTO DE TRANSICION */
+
+    main section article:hover{
+
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+         
+    }
+
+
+
+
+    /* CONFIGURACION PARA QUE CUANDO CAMBIE DE TAMAÑO LA PANTALLA CAMBIE DE FORMATO */
+
+    main section div.articulos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+
+    }
+
+    main section div.articulos article {
+        width: 45%;
+    }
+
+    .precio,
+    .descuento{
+        width: 50%;
+    }
+
+    /* LA HAMBURGUESA DESAPARECE */
+
+    .burger-menu {
+        display: none;
+    }
+    
+   
+    
+}
+
+/* CONFIGURACION PANTALLA DESKTOP (ANCHO MINIMO 769 px)  */
+
+@media (min-width: 769px){
+
+    /* SE DISTRIBUYEN LOS 4 ELEMENTOS DE ARTICULOS POR FILA */
+
+    main section div.articulos article {
+        width: 22.5%;
+    }
+
+    /* EL GRUPO DE LOS DETALLES DEL FOOTER SE EXPANDE */
+
+    .submenu-footer {
+        margin: 22px 0px;
+        display: flex;
+       
+    }
+
+  
+
+
+}  
+    
+    

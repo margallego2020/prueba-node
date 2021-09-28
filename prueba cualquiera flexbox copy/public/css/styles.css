@@ -1,0 +1,16 @@
+
+.detalles-producto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.precio {
+    width: 70%;
+
+}
+
+.descuento {
+    width: 30%;
+
+}

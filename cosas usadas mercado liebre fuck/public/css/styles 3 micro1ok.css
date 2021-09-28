@@ -1,0 +1,106 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+
+}
+
+body {
+    font-size: 12px;
+    background-color: #ebebeb; 
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 40%;
+}
+
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+main section article {
+    margin: 10px 0px;
+    background-color: #fff;
+}
+
+
+article div.datos-article {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+
+main section article img {
+    width: 100%;
+    
+}
+
+.compras-logo {
+    font-size: 12px;
+}
+
+.burger-menu {
+    font-size: 35px;
+    border-radius: 6px;
+    color:#ebebeb;
+    background-color: #1259c3;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    padding: 10px 15px;    
+    
+}
+
+
+
+.banner {
+    width: 100%;
+}
+
+.titulo-section {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    font-size: 16px;
+}
+
+
+ul {
+    list-style-type: none;    
+}
+
+
+
+
+.menu-footer {
+    text-align: center;
+    margin: auto;
+}
+
+.icono-footer {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
