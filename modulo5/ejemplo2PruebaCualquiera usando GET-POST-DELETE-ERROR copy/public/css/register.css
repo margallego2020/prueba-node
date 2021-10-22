@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    font-size: large;
+}
+
+p {
+    display: none;
+    background-color: magenta;
+    color: white;
+}
+
+.impar {
+    border: 2px green solid;
+}
+
+.par {
+    border: 2px red solid;
+}
+
+.impar:hover {
+    border: 2px blue solid;
+    cursor:pointer;
+}
+
+
+
+.par:hover {
+    border: 2px lightseagreen solid;
+    cursor:move;
+}
+
+p:hover {
+    display: block;
+}

@@ -1,0 +1,39 @@
+      <%- include('partials/header') %>
+
+      <!-- Menu Section -->
+      <div class="ps-row ps-padding-64" id="menu">
+        <div class="ps-col l6 ps-padding-large">
+          <h1 class="ps-center"> <%= platoDelDia.titulo %> </h1>
+          <br />
+
+          <% if (platoDelDia.descripcionDetallada == "" ) { %>
+           <h1>Plato típico</h1>
+          <% } else {%>
+        
+          <h4><%= platoDelDia.descripcion %> </h4>
+          <p class="ps-text-grey">
+            U$S <%= platoDelDia.precio %> 
+          </p>
+          <div>
+            <img src="../images/<%= platoDelDia.foto %> " alt="">
+
+          </div>
+
+          <% } %>
+        </div>
+
+    
+        <div class="ps-col l6 ps-padding-large ps-img-menu">
+          <img
+            src="/images/menu.jpg"
+            class="ps-round ps-image ps-opacity-min"
+            alt="Menu"
+          />
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <%- include('partials/footer') %> 
+    </div>
+  </body>
+</html>

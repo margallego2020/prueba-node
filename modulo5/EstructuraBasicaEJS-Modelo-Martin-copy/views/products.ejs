@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+</head>
+<body>
+    <h2>Estamos en la página del listado de los Products</h2>  
+    
+    <% for( let i = 0; i < listaProductos.length; i++ ) { %>
+        <div>
+            <img src= "/images/<%=listaProductos[i].foto %>" alt="">
+        </div>
+        <h1>Descripción: <%= listaProductos[i].descripcion %> </h1>
+        <h4>Precio: $ <%= listaProductos[i].precio %> </h4>
+        <h5>Descuento: <%= listaProductos[i].descuento %> %</h5>
+    
+    <% } %>
+    
+</body>
+</html>

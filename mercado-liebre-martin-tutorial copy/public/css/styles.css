@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+}
+/* hace que cuando le pongo px a algo ya es el total incluyendo padding y margin */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-header {
+    background-color: #EAC926;
+    /* Para que haya espacios en los costados le pongo un padding 20 px */
+    padding: 20px;
+    /* Para que un elemento se quede fijo */
+    position: fixed; /* hace que el elemento se quede fijo en la pantalla para que cuando haga scroll 
+    el elemento no se desplace */
+    top: 0; /* lo que hago es que quede fijo y pegado arriba de todo */
+   
+    z-index: 100; /* con esto hago que quede por encima de lo que yo pase cuando haga scroll */
+}
+
+.hamburguer-button {
+    background-color: #03264c;
+    color: #ffffff;
+    /* para que se centre tengo que convertirlo en elemento de bloque */
+    display: block;
+    /* así la barra azul ocupa todo el ancho. hay que ajustarla */
+    max-width: 50px;
+    padding: 15px 0px;
+    border-radius: 8px;
+    text-align: center; /* con esto centro el icono */
+    font-size: 18px;/* le doy tamaño al texto que es el icono */
+    margin: auto; /* centro el icono */
+}
+
+
+/* le doy tamaño al logo */
+.logo {
+    width: 200px;
+    animation: aumentar 1s ease-in infinite alternate;
+}
+
+/* Voy a animar el logo */
+@keyframes aumentar {
+    0% {
+        transform: scale(1);
+    }   
+    100% {
+        transform: scale(1.5);
+
+
+    }
+
+    
+}
+
+/* para que no se vea en bold */
+.compra-cuotas-credito {
+    font-weight: 400;
+    text-align: center;  /* se centra el texto */
+}
+
+.main-navbar {
+    display: none; /* lo oculto cuando está en modo mobile */
+}
+
+.main-navbar ul { /* con esto toco las listas que hay adentro: ul */
+
+    list-style: none; /* le saco los bullets */
+    margin: 0; /* le saco el margen */
+    padding: 0; /* le saco el padding */
+
+}
+
+.main-navbar a { /* con esto toco los items que hay adentro: a */
+
+    text-decoration: none; /* le saco el subrayado */
+    color: #222222; 
+    display: inline-block; /* lo tomo para que sea de línea */
+    padding: 5px 0;
+    font-size: 17px;
+
+}
+
+.create-form {
+    padding-bottom: 20px 15px;
+    margin-top: 240px; /* los 240px son los que ocupan el main-header */
+}
+
+.control-formulario {
+    margin-bottom: 15px;
+}
+
+.control-formulario label { /* esto afecta a los labels del div de control formulario */
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block; /* así queda encima del campo */
+}
+
+.control {
+    width: 100%; /* con esto ocupa el 100% de su elemento contenedor */
+    padding: 8px;
+}
+
+.boton-formulario {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+.product {
+    /* border: 10px solid #f00; */
+    padding: 0 15px;
+    position: relative; /* lo que hace es que si puse a algún elemento con position absolute se desplaza con 
+    /* respecto al contenedor que lo contiene, en este caso product.
+    
+    Si no le pongo position: relative se va a posicionar con respecto al viewport*/
+    margin: 30px 15px;
+}
+
+.product img { /* a la imagen que está en product se ajuste al 100% de este elemento  */
+    width: 100%;
+}
+
+.product:hover h2 { /* cuando hago hover sobre el product el h2 cambia lo que le digo */
+    opacity: 1;
+    background-color: rgba(255,0,0,0.5);
+    border-radius: 50%;
+}
+
+.product h2 { /* al h2 que está en product */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    margin: 0;
+    padding: 15px;
+    position: absolute; /* ubico al texto abajo a la izquierda del elemento contenedor */
+    left: 0;
+    bottom: 0;
+    width: 100%;/*   con esto hago que me ocupe el 100% del ancho*/
+    height: 100%;/*   con esto hago que me ocupe el 100% de alto*/
+    /* hago que el texto quede alineado horizontal y verticalmente  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* el elemento está pero no se muestra */
+    /* transition: opacity 450ms; con esto hago que haya una transición del opacity por 450 ms */
+    transition: all 450 ms; /* se van a dar todas las transiciones de las propiedades que ponga en el hover */
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .main-header-top-bar {
+        border: 2px dotted blue;
+        display: flex;/* esto hace que se posicionen los objetos de distintas formas */
+        justify-content: space-between; /* hace que el espacio de los elementos que los separen sea el mismo  */
+    }
+
+    .compra-cuotas-credito {
+        max-width: 350px;
+        text-align: right; /* con esto se alinea el texto a la derecha */
+    }
+
+    .hamburguer-button { 
+        display: none; /* se desaparece la hamburguesa */
+    }
+
+    .main-navbar {
+        
+        border: 2px dotted red; /* aparece */
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .main-navbar ul /* se refiere al listado de los items ul  */{
+        
+        display: flex;
+    }
+
+    .main-navbar li /* se refiere a cada uno los items del listado ul  */{
+        margin: 0 5px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .logo {
+        width: 250px;
+    }
+
+    .main-header-top-bar,.main-navbar {
+        max-width: 1200px; /* limito el ancho a 1200px. si supera la resolución de 1200px quedan en ese tamaño de ancho */
+        border: royalblue solid 5px;
+        margin: auto; /* centro los elementos */
+    }
+
+    .main-header-top-bar {
+        align-items: center; /* con esto hago que los items se centren verticalmente */
+        border: solid 3px grey;
+    }
+
+    .compra-cuotas-credito {
+        margin: 0; /* como es h2 tiene márgenes. Se los saco */
+        max-width: none; /* con esto le saco el limitante de ancho */
+        font-size: 22px;
+        font-weight: 400;
+        background-color: salmon;
+        
+    }
+
+
+
+    .main-navbar {
+        margin-top: 50px;
+    }
+
+
+    .main-navbar li /* se refiere a cada uno los items del listado ul  */{
+        margin: 0 10px;
+    }
+
+    .main-navbar a /* se refiere a cada uno los items del listado a  */{
+        font-size: 19px;
+    }
+
+
+}

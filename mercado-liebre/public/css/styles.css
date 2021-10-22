@@ -42,15 +42,17 @@ main {
 header div.main-header {
     width: 100%;
     text-align: center;
-    margin-top: 10px;
+    
 }
 
 header .navbar-menu {
     display: none;           
 }
 
-header .header-logo, header .form {
-    width: 40%;
+header .header-logo {
+    width: 33.33%;
+   
+   
 }
 
 header .header-logo{
@@ -59,8 +61,16 @@ header .header-logo{
 
 
 header .compra-cuotas {
-    width: 30%;
+    width: 33.33%;
+  
+    font-size: 15px;
     
+}
+
+header .search-bar {
+    width: 33.33%;
+  
+    display: flex;  
 }
 
 .compra-cuotas {
@@ -74,26 +84,17 @@ header .compra-cuotas {
 
 /* CONFIGURACION DE LA BARRA DE BUSQUEDA (A MEJORAR) */
 
-header .form{
-    display: flex;
-    align-items: center;
-    padding: 2px;
-    font-size: 11px;
+.search-bar-input {
+    font-size: 15px;
+   
+   
+    
+
 }
 
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
-
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
+.search-bar-button {
+   width: 50%;
+  
 }
 
 
@@ -192,15 +193,6 @@ ul {
      top: -15px;
 }
 
-.fa-truck {
-    transform: rotate(0deg);
-    transition: transform 450ms;
- } 
-
-.fa-truck:hover {
-   
-    transform: rotate(-90deg);
-} 
 
 
  
@@ -293,9 +285,6 @@ ul {
 
 
 
-    
-
-
 
 /* CONFIGURACION PANTALLA TABLETS (ANCHO MINIMO 361 PX)  */
 
@@ -314,6 +303,8 @@ ul {
         display: flex;
         flex-wrap: wrap;
         margin: 0px 5px;
+        font-size: 15px;
+       
     }
 
     ul li { 
@@ -333,13 +324,14 @@ ul {
     }
 
 
+    .fa-truck {
+        transform: rotate(0deg);
+        transition: transform 450ms;
+     } 
 
-    /* CUANDO SE PASA POR UN ARTICULO SE PONE LA SOMBRA SOBRE EL */
+    /* CUANDO SE PASA POR UN ARTICULO SE PONE LA SOMBRA SOBRE EL Y GIRA EL CAMIONCITO*/
 
-   
     main section article {
-
-       
 
         box-shadow: 0px 0px 0px rgb(100, 100, 100);
 
@@ -348,14 +340,24 @@ ul {
     
     /* EFECTO DE TRANSICION */
 
-    main section article:hover{
+    main section article:hover {
 
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-
-         
+      
     }
 
+    main section article:hover .fa-truck {  
+       
+        transform: rotate(-90deg);
+         
+    } 
+         
+    
 
+   
+    
+    
+    
 
 
     /* CONFIGURACION PARA QUE CUANDO CAMBIE DE TAMAÑO LA PANTALLA CAMBIE DE FORMATO */
@@ -398,6 +400,9 @@ ul {
         width: 22.5%;
     }
 
+   
+    
+
     /* EL GRUPO DE LOS DETALLES DEL FOOTER SE EXPANDE */
 
     .submenu-footer {
@@ -406,7 +411,11 @@ ul {
        
     }
 
-  
+    .left-navbar, .right-navbar {
+        
+        font-size: 16px;
+       
+    }
 
 
 }  
