@@ -1,0 +1,14 @@
+{
+  "name": "baseapphtml",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "method-override": "^3.0.0",
+    "nodemon": "^2.0.1"
+  }
+}
