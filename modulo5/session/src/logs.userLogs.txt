@@ -1,0 +1,5 @@
+El usuario ingresó en la ruta: /
+El usuario ingresó en la ruta: /favicon.ico
+El usuario ingresó en la ruta: /
+El usuario ingresó en la ruta: /
+El usuario ingresó en la ruta: /

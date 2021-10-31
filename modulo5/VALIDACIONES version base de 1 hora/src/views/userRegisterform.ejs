@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('partials/head', {title: 'Formulario de creación'}) %>
+<body>
+	<!-- Header -->
+	<%- include('partials/headerNavbar') %>
+	<!-- /Header -->
+
+	<div class="container products-wrapper">
+		
+		<div class="row">
+			<div class="col-12">
+				<h2 class="products-title">Formulario de creación de productos</h2>
+			</div>
+		</div>
+		<div class="col-12">
+			<form action="/users/register" method="POST" enctype="multipart/form-data"> 
+					
+				<div class="row product-detail">
+					<div class="col-12 col-md-6">
+						<label class="form-label">Nombre completo:</label>
+						<input 
+							type="text" 
+							name="fullName" 
+							class="form-input <%= locals.errors && errors.fullName ? 'is-invalid' : null%>"
+							value="<%= locals.oldData ? oldData.fullName : null%>"
+						>
+							<!-- Si hay errores te imprime is invalidad sino nada -->
+						
+						<!-- Si vino en las variables locales oldData quiero que oldData me de el fullName -->
+						<!-- Si no vino no imprimo nada -->
+						 
+							
+
+						<% if (locals.errors && errors.fullName) { %> <!-- te preguntan si hubo errores y si hubo
+						un error para la propiedad fullName -->
+						<div class="text-danger">
+							 <%= errors.fullName.msg %> <!-- Me muestra el msj de error de fullName -->
+						</div>
+						<% } %>
+					</div>
+					<div class="col-12 col-md-6">
+						<label class="form-label">Correo electrónico:</label>
+						<input 
+							type="text" 
+							name="email"  
+							class="form-input <%= locals.errors && errors.email ? 'is-invalid' : null%>"
+							value="<%= locals.oldData ? oldData.email : null%>"	
+						> 
+
+						<% if (locals.errors && errors.email) { %> <!-- te preguntan si hubo errores y si hubo
+							un error para la propiedad fullName -->
+							<div class="text-danger">
+								 <%= errors.email.msg %> <!-- Me muestra el msj de error de fullName -->
+							</div>
+						<% } %>
+					</div>
+					<div class="col-12 col-md-6">
+						<label class="form-label">Password:</label>
+						<input 
+							type="password"  
+							name="password"  
+							class="form-input" <%= locals.errors && errors.password ? 'is-invalid' : null%>">
+
+						<% if (locals.errors && errors.password) { %> <!-- te preguntan si hubo errores y si hubo
+							un error para la propiedad password -->
+							<div class="text-danger">
+								 <%= errors.password.msg %> <!-- Me muestra el msj de error de password -->
+							</div>
+						<% } %>
+					</div>
+					<div class="col-12 col-md-6">
+						<label class="form-label">Pais de nacimiento:</label>
+						<select 
+							name="country"  
+							class="form-input <%= locals.errors && errors.country ? 'is-invalid' : null%>"
+							>
+							<option value="">Elegí un pais</option>
+							<%
+								let countries = ['Argentina', 'Bolivia', 'Brasil', 'Colombia', 'Chile', 'Ecuador',
+								 'Paraguay', 'Perú', 'Uruguay', 'Venezuela'];
+							%>
+							
+							<% for (const oneCountry of countries) { %>
+								<option 
+									value="<%= oneCountry %>"
+									<%= locals.oldData && (oneCountry == oldData.country) ? 'selected' : null %>
+									
+									
+									> <%= oneCountry %> </option>
+
+
+									<!-- Si vino oldData en locals y si lo que vino en la propiedad country corresponde a los countries -->
+									<!-- Mostralo (selected) -->
+							<% } %>
+
+						</select>
+						<% if (locals.errors && errors.country) { %> <!-- te preguntan si hubo errores y si hubo
+							un error para la propiedad country -->
+							<div class="text-danger">
+								 <%= errors.country.msg %> <!-- Me muestra el msj de error de country -->
+							</div>
+						<% } %>
+					</div>
+
+					<div class="col-12">
+						<label>Imagen de perfil:</label>
+						<input type="file" name="avatar">
+						<% if (locals.errors && errors.avatar) { %> <!-- te preguntan si hubo errores y si hubo
+							un error para la propiedad avatar -->
+							<div class="text-danger">
+								 <%= errors.avatar.msg %> <!-- Me muestra el msj de error de avatar -->
+							</div>
+						<% } %>
+					</div>
+					
+					
+					<div class="col-12">
+						<button type="submit" class="buy-now-button">Registrarse</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+	<!-- /todos los productos -->
+
+	<!-- footer -->
+	<%- include('partials/footer') %>
+	<!-- /footer -->
+</body>	
+</html>
