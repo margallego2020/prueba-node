@@ -18,11 +18,17 @@ router.get('/admin',userAuth , mainController.admin);
 
 router.get('/login', usersController.login);
 
+
+router.post('/login', usersController.processLogin2);
+
+
+/*
 router.post('/login', [
     check('email').isEmail().withMessage('Email inválido'),
     check('password').isLength({min: 3}).withMessage('La contraseña debe tener al menos 8 caracteres')
 ],usersController.processLogin);
 
+*/
 router.get('/check', function(req, res){
     if (req.session.usuarioLogueado == undefined) {
         res.send("No estás logueado");

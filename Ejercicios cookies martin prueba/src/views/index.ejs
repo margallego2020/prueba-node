@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bkg-<%= color %>">
+    <h1 class="titulo-principal">Hola <%= data ? data.nombre : 'mundo'  %>! </h1>
+
+    <!-- Si hay datos cargados, te los muestra -->
+    <% if (data) { %>
+        <p>
+            Hola <strong> <%= data.nombre %> </strong>,
+            elegiste el color <strong> <%= data.color %> </strong>,
+            tu email es <strong> <%= data.email %> </strong>
+            <% if (data.edad) { %>
+                y tu edad es <strong><%= data.edad %></strong> 
+            <% } %>
+
+        </p>
+    
+    <% } %>
+    
+    <form action="/" method="POST">
+
+        <!-- Por cada campo pido datos para cargar en el formulario y los valido -->
+
+        <div class = "inputWrapper">
+            <label for="nombre">Ingrese su nombre: </label>
+            <input type="text" name="nombre" id="nombre" value="<%= data ? data.nombre : '' %>">
+
+            <!-- Me fijo si hay errores. Si los hay, muestro el mensaje de error -->
+            <%  if (errors.nombre) { %>
+                <span class='mensajeError'><%= errors.nombre[0].msg %></span> 
+            <% } %> 
+        </div>
+
+        <div class = "inputWrapper">
+            <label for="color">Seleccione un color: </label>
+            <select name="color" id="color">
+                <option value="">--Elija una opción--</option>
+                    <% ['rojo', 'azul', 'amarillo', 'verde'].forEach( (color) => { %>
+                        <option
+                            value="<%= color %>"
+                            <%= data?.color == color ? 'selected' : '' %> 
+                        >
+                            <%= color %>   
+                        </option>
+
+                    <% } )%>
+            </select>
+
+             <!-- Me fijo si hay errores. Si los hay, muestro el mensaje de error -->
+             <%  if (errors.color) { %>
+                <span class='mensajeError'><%= errors.color[0].msg %></span> 
+            <% } %> 
+        </div>
+
+        <div class = "inputWrapper">
+            <label for="email">Ingrese su email: </label>
+            <input type="email" name="email" id="email" value="<%= data ? data.email : '' %>">
+
+            <!-- Me fijo si hay errores. Si los hay, muestro el mensaje de error -->
+            <%  if (errors.email) { %>
+                <span class='mensajeError'><%= errors.email[0].msg %></span> 
+            <% } %> 
+        </div>
+
+
+        <div class = "inputWrapper">
+            <label for="edad">Ingrese su edad: </label>
+            <input type="text" name="edad" id="edad" value="<%= data ? data.edad : '' %>">
+
+            <!-- Me fijo si hay errores. Si los hay, muestro el mensaje de error -->
+            <%  if (errors.edad) { %>
+                <span class='mensajeError'><%= errors.edad[0].msg %></span> 
+            <% } %> 
+        </div>
+
+        <input type="checkbox" name="saveColor" value="save">
+
+        <button type="submit">Enviar</button>
+
+    </form>
+    
+</body>
+</html>

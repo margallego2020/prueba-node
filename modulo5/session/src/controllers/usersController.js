@@ -28,8 +28,23 @@ const users = [
 ];
 
 const usersController = {
+    
     login: function(req, res) {
         return res.render('login');
+    },
+
+    processLogin2: function (req, res) {
+        for (let i = 0; i < users.length; i++) {
+            if (req.body.email == users[i].email && 
+                bcrypt.compareSync(req.body.password, users[i].password))
+                { //Me fijo si el usuario es correcto y que la contraseña sea válida
+                res.send('Te encontré');
+            }
+
+        }
+
+        res.send('error');
+
     },
 
     processLogin: function(req, res) {

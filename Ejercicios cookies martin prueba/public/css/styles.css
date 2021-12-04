@@ -1,0 +1,31 @@
+.titulo-principal {
+    color: blue;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mensajeError {
+    color: red;
+}
+
+.inputWrapper {
+    margin-bottom: 15px;
+}
+
+.bkg-rojo {
+    background-color: rgb(172, 89, 89);
+
+}
+
+.bkg-azul {
+    background-color: rgb(107, 107, 219)
+}
+
+.bkg-amarillo {
+    background-color: rgb(231, 231, 126)
+}
+
+
+.bkg-verde {
+    background-color: rgb(188, 233, 122)
+}

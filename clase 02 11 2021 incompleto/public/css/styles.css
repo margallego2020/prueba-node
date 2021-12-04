@@ -1,0 +1,5 @@
+.titulo-principal{
+    color: royalblue;
+    display: flex;
+    justify-content: space-around;
+}
