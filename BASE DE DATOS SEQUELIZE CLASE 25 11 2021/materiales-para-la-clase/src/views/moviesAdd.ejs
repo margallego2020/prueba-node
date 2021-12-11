@@ -28,11 +28,13 @@
             <p><input type="number" name="length" id="" required></p>
             <label for="genreID">Genre </label>
             <p>
-                <select name="genre_id" id="" required>
-                    <option value="" disabled selected>- select genre - </option>
-                    <% allGenres.forEach(genre => { %>
-                    <option value="<%= genre.id %>"><%= genre.name %></option>
-                    <% }); %>
+                <select name="genre_id" id="">
+                    <option value="" disabled selected>- Select genre -</option>
+                    <% for( let i = 0; i < allGenres.length; i++ ) { %>
+                        <option value="<%= allGenres[i].id %>">
+                            <%= allGenres[i].name %>
+                        </option>
+                    <% } %>
                 </select>
             </p>
             <br>

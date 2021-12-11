@@ -16,10 +16,10 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 
 //URL encode  - Para que nos pueda llegar la información desde el formulario al req.body
 app.use(express.urlencoded({ extended: false }));
-
+app.use(express.json());
 
 app.use('/', indexRouter);
 app.use(moviesRoutes);
 app.use(genresRoutes);
 
-app.listen('3001', () => console.log('Servidor corriendo en el puerto 3001'));
+app.listen('3002', () => console.log('Servidor corriendo en el puerto 3002. http://localhost:3002'));

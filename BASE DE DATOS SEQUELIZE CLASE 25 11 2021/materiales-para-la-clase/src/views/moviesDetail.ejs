@@ -17,8 +17,29 @@
     <p>AWARDS: <%= movie.awards %> </p>
     <p>LENGTH: <%= movie.length + ' min'%> </p>
     <p>RELEASE DATE: <%= movie.release_date %> </p>
+    <p>GENRE: <%= movie.genre?.name || 'Not defined' %> </p> <!-- Si existe movie.genre.name, poneme el nombre, sino poneme el 
+        mensaje de Not defined -->
+
+
+          
+        <p>ACTORS: 
+            <% for (let i=0; i < movie.actors.length; i++) { %> 
+               <li>
+                <%=movie.actors[i].first_name%>
+                <%=movie.actors[i].last_name%>
+              
+               </li>
+           <% } %> </p> 
+        
+     
+        
     <br>
     <section>
+       
+        <a class="botonModificar" href="/movies/edit/<%= movie.id %> ">Modificar</a>
+        <a class="botonBorrar" href="/movies/delete/<%= movie.id %> ">Eliminar</a>
+        <a class="botonVolver" href="/movies">Listado de peliculas</a>
+        
         <!--Aquí debe colocar los botones de Modificar - Borrar y Listado de Películas-->
     </section>
 

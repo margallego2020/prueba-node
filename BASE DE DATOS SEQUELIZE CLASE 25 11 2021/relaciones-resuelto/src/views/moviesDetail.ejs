@@ -18,7 +18,7 @@
     <p>LENGTH: <%= movie.length + ' min'%> </p>
     <p>RELEASE DATE: <%= movie.release_date %> </p>
     <p>GENRE: <%= movie.genre?.name || 'Not Defined' %> </p>
-    <p>ACTORS: <% movie.actors?.forEach((actor, index) => { %>
+    <p>ACTORS: <% movie.actors?.forEach((actor, index)) => { %>
       <%= 
         actor.first_name + ' ' + 
         actor.last_name + 

@@ -1,5 +1,7 @@
 // const { TINYINT, INTEGER } = require("sequelize/types");
 
+const genresController = require("../../controllers/genresController");
+
 module.exports = (sequelize, dataTypes) => {
     let alias = 'Genre';
     let cols = {
@@ -33,6 +35,13 @@ module.exports = (sequelize, dataTypes) => {
     const Genre = sequelize.define(alias, cols, config);
 
     //Aquí debes realizar lo necesario para crear las relaciones con el modelo (Movie)
+
+    Genre.associate = function (models) {
+        Genre.hasMany(models.Movie, { //relación de 1 a 1
+            as: 'movies', //nombre de la relación que es el destino siempre
+            foreignKey: 'genre_id' /* es el foreign key que se conecta en movie */
+        })
+    }
 
     return Genre
 };
